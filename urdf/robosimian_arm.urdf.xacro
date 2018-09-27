@@ -285,7 +285,7 @@
 
         <!-- attach the robotiq gripper to the arm -->
         <joint name="${prefix}palm_joint" type="fixed">
-            <origin xyz="0.104775 -0.004 0" rpy="3.1415 0 1.57080"/>
+            <origin xyz="0.104775 -0.004 0" rpy="3.1415 -1.57080 1.57080"/>
             <axis xyz="0 0 1"/>
             <parent link="${prefix}link7"/>
             <child link="${prefix}palm"/>
