@@ -7,7 +7,7 @@
             <xacro:if value="$(arg namespace)">
                 <robotNamespace>rcta_roman</robotNamespace>
             </xacro:if>
-            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+            <robotSimType>roman_simulation/KinematicRobotHWSim</robotSimType>
         </plugin>
     </gazebo>
 </robot>

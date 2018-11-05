@@ -6,5 +6,17 @@
             <mu2>0.9</mu2>
             <minDepth>0.01</minDepth>
         </gazebo>
+
+        <gazebo reference="front_left_wheel_link"/>
+        <gazebo reference="front_left_wheel"/>
+
+        <gazebo reference="front_right_wheel_link"/>
+        <gazebo reference="front_right_wheel"/>
+
+        <gazebo reference="rear_left_wheel_link"/>
+        <gazebo reference="rear_left_wheel"/>
+
+        <gazebo reference="rear_right_wheel_link"/>
+        <gazebo reference="rear_right_wheel"/>
     </xacro:macro>
 </robot>
