@@ -1,18 +1,6 @@
-<!--launch>
+<launch>
     <arg name="ns" default="false"/>
 
     <param if="$(arg ns)"     name="robot_description" command="$(find xacro)/xacro.py '$(find roman_model)/robots/rcta_roman.urdf.xacro' namespace:=true"/>
     <param unless="$(arg ns)" name="robot_description" command="$(find xacro)/xacro.py '$(find roman_model)/robots/rcta_roman.urdf.xacro' namespace:=false"/>
-</launch-->
-
-<launch>
-    <!-- Don't believe ns param current has any effect -->
-    <arg name="ns"                 default="robot"/>
-    <arg name="name"               default="base"/>
-
-    <group>
-        <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find hardware_launch)/urdf/robot.urdf.xacro' namespace:=$(arg ns) name:=$(arg name)"/>
-
-        <!--param name="tf_prefix" value="$(arg name)"/-->
-    </group>
 </launch>
